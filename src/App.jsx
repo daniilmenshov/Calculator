@@ -30,7 +30,7 @@ function ButtonFunc({ value }) {
 }
 
 async function saveCalculation() { {
-    const response = await fetch("http://localhost:5000/calculate", {
+    const response = await fetch("https://calculator-5jbx.onrender.com/calculate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ expression: inputText }),
